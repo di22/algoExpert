@@ -1,7 +1,9 @@
 # algoExpert algorithms question answers:
 
 2- Validate Subsequence:
-answer 1 => function isValidSubsequence(array, sequence) {
+answer 1 => 
+
+function isValidSubsequence(array, sequence) {
 	let isExist = true;
   const indexedArray = array.filter(e => sequence.includes(e));
 	const isSamedArray = array.every(e => sequence.every(i => e === i));
@@ -20,7 +22,9 @@ answer 1 => function isValidSubsequence(array, sequence) {
 	return isExist;
 }
 
-answer 2 => function isValidSubsequence(array, sequence) {
+answer 2 => 
+
+function isValidSubsequence(array, sequence) {
 	let isExist = true;
 	let index = 0;
   const indexedObject = array.reduce((acc,curr) => {
